@@ -1,0 +1,317 @@
+
+
+/*OLIVER BATSTONE-🍻*/
+
+
+/*--------------------------------------------------------- GLOBAL STYLES -💦 */
+
+
+html {
+  font-size: 14px;
+}
+
+
+
+body {
+  font-family: "Montserrat", "Arial";
+  color: #363636;
+  line-height: 1.4;
+}
+
+
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+
+/*------------------------------------------------------------ NAVIGATION -💦 */
+
+
+.nav-bar {
+  height: 64px;
+  background-color: white;
+
+}
+
+
+
+.nav-bar ul {
+  justify-content: space-between;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.logo span {
+  padding-left: 8px;
+}
+
+
+
+.site-container {
+  margin: 0 16px;
+}
+
+/*---------------------------------------------@MOBILE -⚡️ */
+
+
+
+@media only screen and (max-width:500px) {
+
+  .desktop-nav:nth-child(1n+2) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 545px) {
+  .logo span {
+    display: none;
+  }
+}
+
+/*--------------------------------------@BEYOND-MOBILE -⚡️ */
+
+@media only screen and (min-width:500px) {
+
+  .mobile-nav {
+    display: none;
+
+  }
+
+  .nav-bar {
+    justify-content: flex-end;
+  }
+
+  .logo {
+    flex-grow: 1;
+  }
+
+  .site-container {
+    margin: 0 24px;
+  }
+
+
+  .desktop-nav:nth-child(1n+4) {
+    padding-left: 16px;
+  }
+
+
+}
+
+/*---------------------------------------------------------------- HEADER -💦 */
+
+
+header {
+  background-color: lightgrey;
+  padding-bottom: 32px;
+}
+
+
+
+.header__img-container {
+  height: 180px;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+}
+
+
+
+.header__headline {
+  padding: 32px 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+
+header p {
+  padding-bottom: 24px;
+  font-size: 1.2rem;
+}
+
+
+
+.cta {
+  justify-content: center;
+  height: 40px;
+  background-color: #e833a4;
+  color: white;
+}
+
+/*--------------------------------------@BEYOND-MOBILE -⚡️ */
+
+@media only screen and (min-width:500px) {
+
+header {
+  padding-top: 32px;
+}
+
+.header__img-container {
+  min-width: 60%;
+  height: 500px;
+  margin: 0 24px;
+    background-position: center;
+}
+
+.desktop-flex {
+  display: flex;
+  align-items: center;
+}
+
+}
+
+
+/*------------------------------------------------------------ INFO-ITEMS -💦 */
+
+
+.info-items__item {
+  padding: 16px 0 0 0;
+}
+
+
+/*--------------------------------------------- images -💧 */
+
+
+.item__img-container {
+  height: 180px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+.desktop-story .item__img-container {
+  background-image: url("../images/information-main.jpg");
+}
+
+
+
+#orientation .item__img-container {
+  background-image: url("../images/information-orientation-mobile.jpg");
+}
+
+
+
+#campus .item__img-container {
+  background-image: url("../images/information-campus-mobile.jpg");
+}
+
+
+
+#lecturer .item__img-container {
+  background-image: url("../images/information-guest-lecture-mobile.jpg");
+}
+
+
+/*--------------------------------------------- copy -💧 */
+
+
+.item__copy {
+  display: block;
+  padding: 16px 0;
+  line-height: 1.8;
+}
+
+
+
+.item__copy p {
+  font-family: "Open Sans";
+  font-weight: 200;
+  padding: 8px 0;
+}
+
+
+
+.item__copy a {
+  padding: 8px 0;
+  text-decoration: none;
+  color: skyblue;
+}
+
+
+
+.item__copy h3 {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/*---------------------------------------------@MOBILE -⚡️ */
+
+
+
+@media only screen and (max-width:500px) {
+
+  .desktop-story {
+    display: none;
+  }
+
+}
+
+/*--------------------------------------@BEYOND-MOBILE -⚡️ */
+
+@media only screen and (min-width:500px) {
+
+  .info-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .info-items__item {
+    width: 423px;
+  }
+
+  .info-items__item .items__img-container {
+    width: 30%;
+  }
+
+  .desktop-story {
+    width: 60%;
+    display: inline-block;
+
+  }
+}
+
+/*---------------------------------------------------------------- TOPICS -💦 */
+
+
+.h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 32px 0 16px 0;
+  justify-content: center;
+}
+
+
+
+.topics__item {
+  background-color: lightgrey;
+  margin: 8px 0;
+  padding: 16px;
+  font-size: 1.3rem;
+}
+
+
+/*---------------------------------------------------------------- THESIS -💦 */
+
+
+.thesis-exhbits video {
+  padding: 24px 0;
+  width: 100%;
+  height: auto;
+}
+
+/*---------------------------------------------------------------- FOOTER -💦 */
+
+
+footer span {
+  padding: 16px 0;
+}
